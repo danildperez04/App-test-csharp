@@ -7,6 +7,22 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="450"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="1">
+            <TabControl>
+                <TabItem Header="SIGN IN">
+                    <Grid Background="#FFE5E5E5"/>
+                </TabItem>
+                <TabItem Header="SIGN UP">
+                    <Grid Background="#FFE5E5E5"/>
+                </TabItem>
+            </TabControl>
+        </Grid>
+        <Grid Grid.Column="0">
 
+        </Grid>
     </Grid>
 </Window>
