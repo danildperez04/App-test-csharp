@@ -1,0 +1,43 @@
+﻿<Window x:Class="App_test_csharp.FrmLogin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:App_test_csharp"
+        mc:Ignorable="d"
+        Title="FrmLogin" Height="490" Width="800">
+    <Grid Background="#121F3D">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="450"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="1" Background="#121F3D">
+            <TabControl Margin="0,0,10,10">
+                <TabItem Header="SIGN IN">
+                    <Grid Background="#121F3D">
+                        <Label Content="SIGN IN" HorizontalAlignment="Center" Margin="0,21,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Arial Black" FontSize="20"/>
+                        <Label Content="Carnet" HorizontalAlignment="Left" Margin="32,191,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Arial Black" FontSize="18"/>
+                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="270" Height="20" Margin="0,237,0,0"/>
+                        <Label Content="Password" HorizontalAlignment="Left" Margin="32,271,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Arial Black" FontSize="18"/>
+                        <PasswordBox HorizontalAlignment="Center" Margin="0,317,0,0" VerticalAlignment="Top" Width="270" Height="20"/>
+                        <Button Content="SIGN IN" HorizontalAlignment="Center" Margin="0,362,0,0" VerticalAlignment="Top" Width="130" Height="40"/>
+                        <Label Content="" HorizontalAlignment="Center" Margin="0,82,0,0" VerticalAlignment="Top" Height="85" Width="85">
+                            <Label.Background>
+                                <ImageBrush ImageSource="/user.png"/>
+                            </Label.Background>
+
+                        </Label>
+                    </Grid>
+                </TabItem>
+                <TabItem Header="SIGN UP">
+                    <Grid Background="#121F3D">
+
+                    </Grid>
+                </TabItem>
+            </TabControl>
+        </Grid>
+        <Grid Grid.Column="0" Background="#121F3D" Margin="10,10,10,10">
+            <Border BorderThickness="2" BorderBrush="White"></Border>
+        </Grid>
+    </Grid>
+</Window>

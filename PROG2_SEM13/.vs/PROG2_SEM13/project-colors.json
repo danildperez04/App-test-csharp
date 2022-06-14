@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "6eccb24b-cd01-4fdc-9dae-ad6b6725903f": {
+      "ProjectGuid": "6eccb24b-cd01-4fdc-9dae-ad6b6725903f",
+      "DisplayName": "PROG2_SEM13",
+      "ColorIndex": 0
+    },
+    "ba521c5c-3fe1-44db-9eec-60aac0f7b6d1": {
+      "ProjectGuid": "ba521c5c-3fe1-44db-9eec-60aac0f7b6d1",
+      "DisplayName": "BibliotecaClases13",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
