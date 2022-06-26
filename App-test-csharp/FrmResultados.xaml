@@ -1,0 +1,94 @@
+﻿<Window x:Class="App_test_csharp.FrmResultados"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:App_test_csharp"
+        mc:Ignorable="d"
+        Title="FrmResultados" Height="490" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="165"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0"  Background="#FF0C1532">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="419*"/>
+                <ColumnDefinition Width="381*"/>
+            </Grid.ColumnDefinitions>
+            <Label Content="Tus Resultados!" HorizontalAlignment="Left" Margin="20,37,0,0" VerticalAlignment="Top"  FontSize="24" FontWeight="Bold" Foreground="White"/>
+            <Label Content="Acá podrás ver tus resultados de cada una de las preguntas de tu &#10; examen, y adémas poder repasar cada uno de los temas" HorizontalAlignment="Left" Margin="20,83,0,0" VerticalAlignment="Top" FontSize="17" Foreground="White" Grid.ColumnSpan="2" Width="527"/>
+            <Label Content="0   |   0/10" HorizontalAlignment="Left" Height="59" Margin="163,58,0,0" VerticalAlignment="Top" Width="191" FontSize="38" FontWeight="Bold" Foreground="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.Column="1"/>
+        </Grid>
+        <ScrollViewer Grid.Row="1" >
+            <Grid Height="605" Width="800" Background="#FF12203D">
+                <Label Content="1. Maecenas in lacus mauris. Morbi mattis sed urna a malesuada?" HorizontalAlignment="Left" Margin="20,15,0,0" VerticalAlignment="Top" Width="575" FontSize="18" Foreground="White" BorderBrush="#FF00C807" BorderThickness="2,2,2,2" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" />
+                <Button Content="REPASAR AQUI" HorizontalAlignment="Left" Margin="620,16,0,0" VerticalAlignment="Top" Width="139" Background="#FF0066FF" BorderBrush="White" Foreground="White" FontFamily="Consolas" FontWeight="Bold" BorderThickness="2,2,2,2" ClipToBounds="True" Height="29" Cursor="Hand" >
+                    <Button.Style>
+                        <Style/>
+                    </Button.Style>
+                </Button>
+                <Separator HorizontalAlignment="Center" Margin="0,56,0,0" VerticalAlignment="Top" Height="5" Width="800"/>
+                <Label Content="2. Maecenas in lacus mauris. Morbi mattis sed urna a malesuada?" HorizontalAlignment="Left" Margin="20,77,0,0" VerticalAlignment="Top" Width="575" FontSize="18" Foreground="White" BorderBrush="Red" BorderThickness="2,2,2,2" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+                <Button Content="REPASAR AQUI" HorizontalAlignment="Left" Margin="620,80,0,0" VerticalAlignment="Top" Width="139" Background="#FF0066FF" BorderBrush="White" Foreground="White" FontFamily="Consolas" FontWeight="Bold" BorderThickness="2,2,2,2" ClipToBounds="True" Height="29" Cursor="Hand" >
+                    <Button.Style>
+                        <Style/>
+                    </Button.Style>
+                </Button>
+                <Separator HorizontalAlignment="Center" Margin="0,120,0,0" VerticalAlignment="Top" Height="5" Width="800"/>
+                <Label Content="3. Maecenas in lacus mauris. Morbi mattis sed urna a malesuada?" HorizontalAlignment="Left" Margin="20,140,0,0" VerticalAlignment="Top" Width="575" FontSize="18" Foreground="White" BorderBrush="#FF00C807" BorderThickness="2,2,2,2" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+                <Button Content="REPASAR AQUI" HorizontalAlignment="Left" Margin="620,141,0,0" VerticalAlignment="Top" Width="139" Background="#FF0066FF" BorderBrush="White" Foreground="White" FontFamily="Consolas" FontWeight="Bold" BorderThickness="2,2,2,2" ClipToBounds="True" Height="29" Cursor="Hand" >
+                    <Button.Style>
+                        <Style/>
+                    </Button.Style>
+                </Button>
+                <Separator HorizontalAlignment="Center" Margin="0,181,0,0" VerticalAlignment="Top" Height="5" Width="800"/>
+                <Label Content="4. Maecenas in lacus mauris. Morbi mattis sed urna a malesuada?" HorizontalAlignment="Left" Margin="20,200,0,0" VerticalAlignment="Top" Width="575" FontSize="18" Foreground="White" BorderBrush="#FF00C807" BorderThickness="2,2,2,2" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+                <Button Content="REPASAR AQUI" HorizontalAlignment="Left" Margin="620,201,0,0" VerticalAlignment="Top" Width="139" Background="#FF0066FF" BorderBrush="White" Foreground="White" FontFamily="Consolas" FontWeight="Bold" BorderThickness="2,2,2,2" ClipToBounds="True" Height="29" Cursor="Hand" >
+                    <Button.Style>
+                        <Style/>
+                    </Button.Style>
+                </Button>
+                <Separator HorizontalAlignment="Center" Margin="0,241,0,0" VerticalAlignment="Top" Height="5" Width="800"/>
+                <Label Content="5. Maecenas in lacus mauris. Morbi mattis sed urna a malesuada?" HorizontalAlignment="Left" Margin="20,259,0,0" VerticalAlignment="Top" Width="575" FontSize="18" Foreground="White" BorderBrush="Red" BorderThickness="2,2,2,2" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+                <Button Content="REPASAR AQUI" HorizontalAlignment="Left" Margin="620,260,0,0" VerticalAlignment="Top" Width="139" Background="#FF0066FF" BorderBrush="White" Foreground="White" FontFamily="Consolas" FontWeight="Bold" BorderThickness="2,2,2,2" ClipToBounds="True" Height="29" Cursor="Hand" >
+                    <Button.Style>
+                        <Style/>
+                    </Button.Style>
+                </Button>
+                <Separator HorizontalAlignment="Center" Margin="0,300,0,0" VerticalAlignment="Top" Height="5" Width="800"/>
+                <Label Content="1. Maecenas in lacus mauris. Morbi mattis sed urna a malesuada?" HorizontalAlignment="Left" Margin="20,321,0,0" VerticalAlignment="Top" Width="575" FontSize="18" Foreground="White" BorderBrush="#FF00C807" BorderThickness="2,2,2,2" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+                <Button Content="REPASAR AQUI" HorizontalAlignment="Left" Margin="620,322,0,0" VerticalAlignment="Top" Width="139" Background="#FF0066FF" BorderBrush="White" Foreground="White" FontFamily="Consolas" FontWeight="Bold" BorderThickness="2,2,2,2" ClipToBounds="True" Height="29" Cursor="Hand" >
+
+                </Button>
+                <Separator HorizontalAlignment="Center" Margin="0,362,0,0" VerticalAlignment="Top" Height="5" Width="800"/>
+                <Label Content="2. Maecenas in lacus mauris. Morbi mattis sed urna a malesuada?" HorizontalAlignment="Left" Margin="20,385,0,0" VerticalAlignment="Top" Width="575" FontSize="18" Foreground="White" BorderBrush="Red" BorderThickness="2,2,2,2" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+                <Button Content="REPASAR AQUI" HorizontalAlignment="Left" Margin="620,386,0,0" VerticalAlignment="Top" Width="139" Background="#FF0066FF" BorderBrush="White" Foreground="White" FontFamily="Consolas" FontWeight="Bold" BorderThickness="2,2,2,2" ClipToBounds="True" Height="29" Cursor="Hand" >
+                    <Button.Style>
+                        <Style/>
+                    </Button.Style>
+                </Button>
+                <Separator HorizontalAlignment="Center" Margin="0,426,0,0" VerticalAlignment="Top" Height="5" Width="800"/>
+                <Label Content="3. Maecenas in lacus mauris. Morbi mattis sed urna a malesuada?" HorizontalAlignment="Left" Margin="20,446,0,0" VerticalAlignment="Top" Width="575" FontSize="18" Foreground="White" BorderBrush="#FF00C807" BorderThickness="2,2,2,2" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+                <Button Content="REPASAR AQUI" HorizontalAlignment="Left" Margin="620,447,0,0" VerticalAlignment="Top" Width="139" Background="#FF0066FF" BorderBrush="White" Foreground="White" FontFamily="Consolas" FontWeight="Bold" BorderThickness="2,2,2,2" ClipToBounds="True" Height="29" Cursor="Hand" >
+                    <Button.Style>
+                        <Style/>
+                    </Button.Style>
+                </Button>
+                <Separator HorizontalAlignment="Center" Margin="0,487,0,0" VerticalAlignment="Top" Height="5" Width="800"/>
+                <Label Content="4. Maecenas in lacus mauris. Morbi mattis sed urna a malesuada?" HorizontalAlignment="Left" Margin="20,506,0,0" VerticalAlignment="Top" Width="575" FontSize="18" Foreground="White" BorderBrush="Red" BorderThickness="2,2,2,2" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+                <Button Content="REPASAR AQUI" HorizontalAlignment="Left" Margin="620,507,0,0" VerticalAlignment="Top" Width="139" Background="#FF0066FF" BorderBrush="White" Foreground="White" FontFamily="Consolas" FontWeight="Bold" BorderThickness="2,2,2,2" ClipToBounds="True" Height="29" Cursor="Hand" >
+                    <Button.Style>
+                        <Style/>
+                    </Button.Style>
+                </Button>
+                <Separator HorizontalAlignment="Center" Margin="0,547,0,0" VerticalAlignment="Top" Height="5" Width="800"/>
+                <Label Content="5. Maecenas in lacus mauris. Morbi mattis sed urna a malesuada?" HorizontalAlignment="Left" Margin="20,565,0,0" VerticalAlignment="Top" Width="575" FontSize="18" Foreground="White" BorderBrush="#FF00C807" BorderThickness="2,2,2,2" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+                <Button Content="REPASAR AQUI" HorizontalAlignment="Left" Margin="620,566,0,0" VerticalAlignment="Top" Width="139" Background="#FF0066FF" BorderBrush="White" Foreground="White" FontFamily="Consolas" FontWeight="Bold" BorderThickness="2,2,2,2" ClipToBounds="True" Height="30" Cursor="Hand" >
+
+                </Button>
+
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+</Window>
