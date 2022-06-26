@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "dc225c2f-872b-4578-9faf-5815da578a69": {
+      "ProjectGuid": "dc225c2f-872b-4578-9faf-5815da578a69",
+      "DisplayName": "App-test-csharp",
+      "ColorIndex": 0
+    },
+    "465af2c3-f424-4a57-ba20-66570b4459ee": {
+      "ProjectGuid": "465af2c3-f424-4a57-ba20-66570b4459ee",
+      "DisplayName": "ClassesLibrary",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
