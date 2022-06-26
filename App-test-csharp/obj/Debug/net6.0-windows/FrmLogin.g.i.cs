@@ -53,7 +53,7 @@ namespace App_test_csharp {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/App-test-csharp;V1.0.0.0;component/frmlogin.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/App-test-csharp;component/frmlogin.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\FrmLogin.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -7,10 +7,12 @@ using System.Threading.Tasks;
 
 namespace ClassesLibrary
 {
-    public class CLogin
+    public class CMain
     {
-        FrmLogin view;
-        User model;
-        private Dictionary<string, User> users = new Dictionary<string, User>();
+        static void Main(string[] args)
+        {
+            FrmLogin loginView = new FrmLogin();
+            loginView.Show();
+        }
     }
 }

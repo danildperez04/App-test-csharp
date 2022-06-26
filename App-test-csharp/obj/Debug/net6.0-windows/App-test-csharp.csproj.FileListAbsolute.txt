@@ -3,8 +3,6 @@ C:\Users\Dani-\OneDrive\Documentos\App-test-csharp\App-test-csharp\bin\Debug\net
 C:\Users\Dani-\OneDrive\Documentos\App-test-csharp\App-test-csharp\bin\Debug\net6.0-windows\App-test-csharp.runtimeconfig.json
 C:\Users\Dani-\OneDrive\Documentos\App-test-csharp\App-test-csharp\bin\Debug\net6.0-windows\App-test-csharp.dll
 C:\Users\Dani-\OneDrive\Documentos\App-test-csharp\App-test-csharp\bin\Debug\net6.0-windows\App-test-csharp.pdb
-C:\Users\Dani-\OneDrive\Documentos\App-test-csharp\App-test-csharp\bin\Debug\net6.0-windows\ClassesLibrary.dll
-C:\Users\Dani-\OneDrive\Documentos\App-test-csharp\App-test-csharp\bin\Debug\net6.0-windows\ClassesLibrary.pdb
 C:\Users\Dani-\OneDrive\Documentos\App-test-csharp\App-test-csharp\obj\Debug\net6.0-windows\App-test-csharp.csproj.AssemblyReference.cache
 C:\Users\Dani-\OneDrive\Documentos\App-test-csharp\App-test-csharp\obj\Debug\net6.0-windows\App.g.cs
 C:\Users\Dani-\OneDrive\Documentos\App-test-csharp\App-test-csharp\obj\Debug\net6.0-windows\App-test-csharp_MarkupCompile.cache
@@ -14,7 +12,6 @@ C:\Users\Dani-\OneDrive\Documentos\App-test-csharp\App-test-csharp\obj\Debug\net
 C:\Users\Dani-\OneDrive\Documentos\App-test-csharp\App-test-csharp\obj\Debug\net6.0-windows\App-test-csharp.AssemblyInfoInputs.cache
 C:\Users\Dani-\OneDrive\Documentos\App-test-csharp\App-test-csharp\obj\Debug\net6.0-windows\App-test-csharp.AssemblyInfo.cs
 C:\Users\Dani-\OneDrive\Documentos\App-test-csharp\App-test-csharp\obj\Debug\net6.0-windows\App-test-csharp.csproj.CoreCompileInputs.cache
-C:\Users\Dani-\OneDrive\Documentos\App-test-csharp\App-test-csharp\obj\Debug\net6.0-windows\App-test-csharp.csproj.CopyComplete
 C:\Users\Dani-\OneDrive\Documentos\App-test-csharp\App-test-csharp\obj\Debug\net6.0-windows\App-test-csharp.dll
 C:\Users\Dani-\OneDrive\Documentos\App-test-csharp\App-test-csharp\obj\Debug\net6.0-windows\refint\App-test-csharp.dll
 C:\Users\Dani-\OneDrive\Documentos\App-test-csharp\App-test-csharp\obj\Debug\net6.0-windows\App-test-csharp.pdb
@@ -22,3 +19,5 @@ C:\Users\Dani-\OneDrive\Documentos\App-test-csharp\App-test-csharp\obj\Debug\net
 C:\Users\Dani-\OneDrive\Documentos\App-test-csharp\App-test-csharp\obj\Debug\net6.0-windows\ref\App-test-csharp.dll
 C:\Users\Dani-\OneDrive\Documentos\App-test-csharp\App-test-csharp\obj\Debug\net6.0-windows\FrmLogin.g.cs
 C:\Users\Dani-\OneDrive\Documentos\App-test-csharp\App-test-csharp\obj\Debug\net6.0-windows\FrmLogin.baml
+C:\Users\Dani-\OneDrive\Documentos\App-test-csharp\App-test-csharp\obj\Debug\net6.0-windows\FrmResultados.g.cs
+C:\Users\Dani-\OneDrive\Documentos\App-test-csharp\App-test-csharp\obj\Debug\net6.0-windows\FrmResultados.baml
