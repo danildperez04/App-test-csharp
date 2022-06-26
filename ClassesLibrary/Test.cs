@@ -8,5 +8,15 @@ namespace ClassesLibrary
 {
     public class Test
     {
+        public List<Question> Questions { get => questions; set => questions = value; }
+        public bool Completed { get => completed; set => completed = value; }
+
+        public void AddQuestion(Question question)
+        {
+            this.questions.Add(question);
+        }
+
+        private List<Question> questions = new List<Question>();
+        private bool completed;
     }
 }
