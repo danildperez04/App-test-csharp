@@ -1,33 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net6.0-windows7.0": {
-      "ClassesLibrary/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/ClassesLibrary.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ClassesLibrary.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.WindowsDesktop.App.WPF"
-        ]
-      }
-    }
+    "net6.0-windows7.0": {}
   },
-  "libraries": {
-    "ClassesLibrary/1.0.0": {
-      "type": "project",
-      "path": "../ClassesLibrary/ClassesLibrary.csproj",
-      "msbuildProject": "../ClassesLibrary/ClassesLibrary.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net6.0-windows7.0": [
-      "ClassesLibrary >= 1.0.0"
-    ]
+    "net6.0-windows7.0": []
   },
   "packageFolders": {
     "C:\\Users\\Dani-\\.nuget\\packages\\": {}
@@ -55,11 +33,7 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
-          "projectReferences": {
-            "C:\\Users\\Dani-\\OneDrive\\Documentos\\App-test-csharp\\ClassesLibrary\\ClassesLibrary.csproj": {
-              "projectPath": "C:\\Users\\Dani-\\OneDrive\\Documentos\\App-test-csharp\\ClassesLibrary\\ClassesLibrary.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
