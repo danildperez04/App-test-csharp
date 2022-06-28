@@ -1,4 +1,5 @@
 ﻿using App_test_csharp;
+using ClassesLibrary.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
 
-namespace ClassesLibrary
+namespace ClassesLibrary.Controller
 {
     public class CQuestion
     {
@@ -47,8 +48,8 @@ namespace ClassesLibrary
                 btnAnswers[i].Content = answers;
                 i++;
             }
-            /*view.LblPregunta.Text = nextQuestion.QuestionLabel;
-            view.LblImagenPregunta.Icon = nextQuestion.ImageLabel;*/
+            view.LblPregunta.Content = nextQuestion.QuestionLabel;
+            view.LblImagenPregunta.Background = nextQuestion.ImageLabel;
             Console.WriteLine("Question updated\n\n");
         }
 

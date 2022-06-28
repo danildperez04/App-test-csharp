@@ -1,11 +1,12 @@
 ﻿using App_test_csharp;
+using ClassesLibrary.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ClassesLibrary
+namespace ClassesLibrary.Controller
 {
     public class CLogin
     {

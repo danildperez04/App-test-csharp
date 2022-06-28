@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ClassesLibrary
+namespace ClassesLibrary.Model
 {
     public class Test
     {
@@ -13,7 +13,7 @@ namespace ClassesLibrary
 
         public void AddQuestion(Question question)
         {
-            this.questions.Add(question);
+            questions.Add(question);
         }
 
         private List<Question> questions = new List<Question>();

@@ -1,12 +1,12 @@
 using System;
 using System.Collections.Generic;
 
-namespace ClassesLibrary
+namespace ClassesLibrary.Model
 {
     public class User
     {
         public User() { }
-        
+
         public User(string name, string carnet, string password, List<Test> tests)
         {
             this.name = name;

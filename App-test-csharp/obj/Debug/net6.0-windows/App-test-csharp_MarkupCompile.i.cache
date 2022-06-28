@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\Dani-\OneDrive\Documentos\App-test-csharp\App-test-csharp\App.xaml
-3-1382022474
+3-1202288197
 
-7-1507633084
+7-514517265
 1942030480316
-FrmLogin.xaml;FrmQuestions.xaml;FrmResultados.xaml;
+View\FrmLogin.xaml;View\FrmQuestions.xaml;View\FrmResultados.xaml;
 
 False
 

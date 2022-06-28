@@ -17,7 +17,9 @@ C:\Users\Dani-\OneDrive\Documentos\App-test-csharp\App-test-csharp\obj\Debug\net
 C:\Users\Dani-\OneDrive\Documentos\App-test-csharp\App-test-csharp\obj\Debug\net6.0-windows\App-test-csharp.pdb
 C:\Users\Dani-\OneDrive\Documentos\App-test-csharp\App-test-csharp\obj\Debug\net6.0-windows\App-test-csharp.genruntimeconfig.cache
 C:\Users\Dani-\OneDrive\Documentos\App-test-csharp\App-test-csharp\obj\Debug\net6.0-windows\ref\App-test-csharp.dll
-C:\Users\Dani-\OneDrive\Documentos\App-test-csharp\App-test-csharp\obj\Debug\net6.0-windows\FrmLogin.g.cs
-C:\Users\Dani-\OneDrive\Documentos\App-test-csharp\App-test-csharp\obj\Debug\net6.0-windows\FrmLogin.baml
-C:\Users\Dani-\OneDrive\Documentos\App-test-csharp\App-test-csharp\obj\Debug\net6.0-windows\FrmResultados.g.cs
-C:\Users\Dani-\OneDrive\Documentos\App-test-csharp\App-test-csharp\obj\Debug\net6.0-windows\FrmResultados.baml
+C:\Users\Dani-\OneDrive\Documentos\App-test-csharp\App-test-csharp\obj\Debug\net6.0-windows\View\FrmLogin.g.cs
+C:\Users\Dani-\OneDrive\Documentos\App-test-csharp\App-test-csharp\obj\Debug\net6.0-windows\View\FrmQuestions.g.cs
+C:\Users\Dani-\OneDrive\Documentos\App-test-csharp\App-test-csharp\obj\Debug\net6.0-windows\View\FrmResultados.g.cs
+C:\Users\Dani-\OneDrive\Documentos\App-test-csharp\App-test-csharp\obj\Debug\net6.0-windows\View\FrmLogin.baml
+C:\Users\Dani-\OneDrive\Documentos\App-test-csharp\App-test-csharp\obj\Debug\net6.0-windows\View\FrmQuestions.baml
+C:\Users\Dani-\OneDrive\Documentos\App-test-csharp\App-test-csharp\obj\Debug\net6.0-windows\View\FrmResultados.baml

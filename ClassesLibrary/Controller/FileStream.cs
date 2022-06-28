@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ClassesLibrary.Model;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -6,7 +7,7 @@ using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 
-namespace ClassesLibrary
+namespace ClassesLibrary.Controller
 {
     public class FileStream
     {
@@ -45,9 +46,9 @@ namespace ClassesLibrary
             {
                 Console.WriteLine("Ha ocurrido un error! \nNo hemos encontrado la ruta del archivo especificado");
             }
-            catch (IOException)
+            catch (IOException io)
             {
-                Console.WriteLine("Ha ocurrido un error! \nLa ejecucion del programa ha sido interrumpida\n" + io.toString());
+                Console.WriteLine("Ha ocurrido un error! \nLa ejecucion del programa ha sido interrumpida\n" + io.ToString());
             }
         }
 

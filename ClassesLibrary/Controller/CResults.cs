@@ -1,4 +1,5 @@
 ﻿using App_test_csharp;
+using ClassesLibrary.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 using System.Windows.Controls;
 using System.Windows.Media;
 
-namespace ClassesLibrary
+namespace ClassesLibrary.Controller
 {
     public class CResults
     {
@@ -15,9 +16,9 @@ namespace ClassesLibrary
         public CResults(FrmResultados view, List<Question> model)
         {
             this.view = view;
-            this.questions = model;
-            this.btnsHelp = new Button[] { view.Button1, view.Button2, view.Button3, view.Button4, view.Button5, view.Button6, view.Button7, view.Button8, view.Button9, view.Button10 };
-            this.questionsLabel = new Label[] { view.Question1, view.Question2, view.Question3, view.Question4, view.Question5, view.Question6, view.Question7, view.Question8, view.Question9, view.Question10 };
+            questions = model;
+            btnsHelp = new Button[] { view.Button1, view.Button2, view.Button3, view.Button4, view.Button5, view.Button6, view.Button7, view.Button8, view.Button9, view.Button10 };
+            questionsLabel = new Label[] { view.Question1, view.Question2, view.Question3, view.Question4, view.Question5, view.Question6, view.Question7, view.Question8, view.Question9, view.Question10 };
             initBtnsHelp();
             initQuestionsLabel();
             initScore();
@@ -33,7 +34,7 @@ namespace ClassesLibrary
                     acum++;
                 }
             }
-            view.Score.Content = (acum / 10) * 100 + "% |  " + Math.Round(acum) + "/10";
+            view.Score.Content = acum / 10 * 100 + "% |  " + Math.Round(acum) + "/10";
         }
 
         public void initBtnsHelp()
@@ -41,22 +42,22 @@ namespace ClassesLibrary
             for (int i = 0; i < 10; i++)
             {
                 Button actualButton = btnsHelp[i];
-                String actualLink = questions[i].Link;
+                string actualLink = questions[i].Link;
                 //Falta logica de links
                 actualButton.Click += actualButton_Click;
 
-                 void actualButton_Click(object sender, EventArgs e)
+                void actualButton_Click(object sender, EventArgs e)
                 {
                     System.Diagnostics.Process.Start(actualLink);
                 }
             }
         }
 
- 
+
 
         public void initQuestionsLabel()
         {
-            for(int i = 0; i < 10; i++)
+            for (int i = 0; i < 10; i++)
             {
                 Label actualQuestionLabel = questionsLabel[i];
                 actualQuestionLabel.Content = questions[i].QuestionLabel;
