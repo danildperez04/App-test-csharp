@@ -6,8 +6,4 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\App-test-csharp\App-test-csharp.csproj" />
-  </ItemGroup>
-
 </Project>

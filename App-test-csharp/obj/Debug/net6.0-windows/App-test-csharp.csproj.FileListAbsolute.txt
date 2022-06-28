@@ -23,3 +23,8 @@ C:\Users\Dani-\OneDrive\Documentos\App-test-csharp\App-test-csharp\obj\Debug\net
 C:\Users\Dani-\OneDrive\Documentos\App-test-csharp\App-test-csharp\obj\Debug\net6.0-windows\View\FrmLogin.baml
 C:\Users\Dani-\OneDrive\Documentos\App-test-csharp\App-test-csharp\obj\Debug\net6.0-windows\View\FrmQuestions.baml
 C:\Users\Dani-\OneDrive\Documentos\App-test-csharp\App-test-csharp\obj\Debug\net6.0-windows\View\FrmResultados.baml
+C:\Users\Dani-\OneDrive\Documentos\App-test-csharp\App-test-csharp\obj\Debug\net6.0-windows\View\FrmMenu.g.cs
+C:\Users\Dani-\OneDrive\Documentos\App-test-csharp\App-test-csharp\obj\Debug\net6.0-windows\View\FrmMenu.baml
+C:\Users\Dani-\OneDrive\Documentos\App-test-csharp\App-test-csharp\bin\Debug\net6.0-windows\ClassesLibrary.dll
+C:\Users\Dani-\OneDrive\Documentos\App-test-csharp\App-test-csharp\bin\Debug\net6.0-windows\ClassesLibrary.pdb
+C:\Users\Dani-\OneDrive\Documentos\App-test-csharp\App-test-csharp\obj\Debug\net6.0-windows\App-test-csharp.csproj.CopyComplete

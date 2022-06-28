@@ -75,6 +75,7 @@ namespace ClassesLibrary.Controller
         }
 
         private FrmResultados view;
+        private static string carnet;
         private Button[] btnsHelp = new Button[10];
         private Label[] questionsLabel = new Label[10];
         private List<Question> questions = null;

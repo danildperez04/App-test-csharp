@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:App_test_csharp"
         mc:Ignorable="d"
-        Title="FrmLogin" Height="490" Width="800">
+        Title="FrmLogin" Height="490" Width="800" Loaded="Main">
     <Grid Background="#121F3D">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="450"></ColumnDefinition>
@@ -17,13 +17,13 @@
                     <Grid Background="#121F3D">
                         <Label Content="SIGN IN" HorizontalAlignment="Center" Margin="0,21,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Arial Black" FontSize="20"/>
                         <Label Content="Carnet" HorizontalAlignment="Left" Margin="32,191,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Arial Black" FontSize="18"/>
-                        <TextBox HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="270" Height="20" Margin="0,237,0,0"/>
+                        <TextBox x:Name="TxtSignInCarnet" x:FieldModifier="public" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="270" Height="20" Margin="0,237,0,0"/>
                         <Label Content="Password" HorizontalAlignment="Left" Margin="32,271,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Arial Black" FontSize="18"/>
-                        <PasswordBox HorizontalAlignment="Center" Margin="0,317,0,0" VerticalAlignment="Top" Width="270" Height="20"/>
-                        <Button Content="SIGN IN" HorizontalAlignment="Center" Margin="0,362,0,0" VerticalAlignment="Top" Width="130" Height="40"/>
+                        <PasswordBox x:Name="TxtPassword" x:FieldModifier="public" HorizontalAlignment="Center" Margin="0,317,0,0" VerticalAlignment="Top" Width="270" Height="20"/>
+                        <Button x:Name="BtnSignIn" x:FieldModifier="public" Content="SIGN IN" HorizontalAlignment="Center" Margin="0,362,0,0" VerticalAlignment="Top" Width="130" Height="40"/>
                         <Label Content="" HorizontalAlignment="Center" Margin="0,82,0,0" VerticalAlignment="Top" Height="85" Width="85">
                             <Label.Background>
-                                <ImageBrush ImageSource="/user.png"/>
+                                <ImageBrush ImageSource="/View/user.png"/>
                             </Label.Background>
 
                         </Label>
@@ -33,14 +33,14 @@
                     <Grid Background="#121F3D">
                         <Label Content="SIGN UP" HorizontalAlignment="Center" Margin="0,21,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Arial Black" FontSize="20"/>
                         <Label Content="Username" HorizontalAlignment="Left" Margin="27,77,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Arial Black" FontSize="18" RenderTransformOrigin="0.451,0.187"/>
-                        <TextBox HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="270" Height="20" Margin="27,123,0,0"/>
+                        <TextBox x:Name="TxtSignUpUsername" x:FieldModifier="public" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="270" Height="20" Margin="27,123,0,0"/>
                         <Label Content="Carnet" HorizontalAlignment="Left" Margin="27,162,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Arial Black" FontSize="18"/>
-                        <TextBox HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="270" Height="20" Margin="27,208,0,0"/>
+                        <TextBox x:Name="TxtSignUpCarnet" x:FieldModifier="public" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="270" Height="20" Margin="27,208,0,0"/>
                         <Label Content="Password" HorizontalAlignment="Left" Margin="27,242,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Arial Black" FontSize="18"/>
-                        <PasswordBox HorizontalAlignment="Left" Margin="27,288,0,0" VerticalAlignment="Top" Width="270" Height="20"/>
-                        <Button Content="SIGN UP" HorizontalAlignment="Center" Margin="0,362,0,0" VerticalAlignment="Top" Width="130" Height="40"/>
+                        <PasswordBox x:Name="TxtSignUpPassword" x:FieldModifier="public" HorizontalAlignment="Left" Margin="27,288,0,0" VerticalAlignment="Top" Width="270" Height="20"/>
                         <RadioButton Content="Male" HorizontalAlignment="Left" Margin="254,337,0,0" VerticalAlignment="Top"/>
                         <RadioButton Content="Female" HorizontalAlignment="Left" Margin="178,337,0,0" VerticalAlignment="Top"/>
+                        <Button x:Name="BtnSignUp" x:FieldModifier="public" Content="SIGN UP" HorizontalAlignment="Center" Margin="0,362,0,0" VerticalAlignment="Top" Width="130" Height="40"/>
                     </Grid>
                 </TabItem>
             </TabControl>

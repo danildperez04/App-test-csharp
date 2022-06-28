@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "App-test-csharp/1.0.0": {
+        "dependencies": {
+          "ClassesLibrary": "1.0.0"
+        },
         "runtime": {
           "App-test-csharp.dll": {}
+        }
+      },
+      "ClassesLibrary/1.0.0": {
+        "runtime": {
+          "ClassesLibrary.dll": {}
         }
       }
     }
   },
   "libraries": {
     "App-test-csharp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ClassesLibrary/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

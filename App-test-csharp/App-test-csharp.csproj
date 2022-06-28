@@ -6,22 +6,23 @@
     <RootNamespace>App_test_csharp</RootNamespace>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
+    <StartupObject>App_test_csharp.App</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="user.png" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Resource Include="user.png" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="View\" />
+    <None Remove="View\user.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Page Include="App.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ClassesLibrary\ClassesLibrary.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="View\user.png" />
   </ItemGroup>
 
 </Project>

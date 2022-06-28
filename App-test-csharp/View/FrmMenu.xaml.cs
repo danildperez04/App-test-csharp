@@ -1,6 +1,4 @@
-﻿using ClassesLibrary.Controller;
-using ClassesLibrary.Model;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,23 +12,16 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace App_test_csharp
+namespace App_test_csharp.View
 {
     /// <summary>
-    /// Lógica de interacción para FrmLogin.xaml
+    /// Lógica de interacción para FrmMenu.xaml
     /// </summary>
-    public partial class FrmLogin : Window
+    public partial class FrmMenu : Window
     {
-        public FrmLogin()
+        public FrmMenu()
         {
             InitializeComponent();
-        }
-
-        private void Main(object sender, RoutedEventArgs e)
-        {
-            User userModel = new User();
-            CLogin cLogin = new CLogin(this, userModel);
-            Console.WriteLine("Funciona");
         }
     }
 }

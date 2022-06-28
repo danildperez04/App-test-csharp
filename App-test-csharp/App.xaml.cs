@@ -13,5 +13,6 @@ namespace App_test_csharp
     /// </summary>
     public partial class App : Application
     {
+      
     }
 }
