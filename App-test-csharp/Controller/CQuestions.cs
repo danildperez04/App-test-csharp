@@ -9,15 +9,41 @@ using System.Windows.Controls;
 
 namespace ClassesLibrary.Controller
 {
-    public class CQuestion
+    public class CQuestions
     {
+        public CQuestions(FrmQuestions view, Question model, Test test)
+        {
+            this.view = view;
+            this.model = model;
+            this.testModel = test;
+            this.btnAnswers = new Button[] { view.BtnResp1, view.BtnResp2, view.BtnResp3, view.BtnResp4 };
 
-        public void pressButton(string textBtn)
+            GetSequence(testModel.Questions.Count);
+            questions = testModel.Questions;
+            UpdateQuestion(questions[sequenceQuestions[0]]);
+            InitButtons();
+        }
+
+        public void InitButtons()
+        {
+            view.BtnResp1.Click += (sender, e) => BtnResp_Click(sender, e, view.BtnResp1);
+            view.BtnResp2.Click += (sender, e) => BtnResp_Click(sender, e, view.BtnResp2);
+            view.BtnResp3.Click += (sender, e) => BtnResp_Click(sender, e, view.BtnResp3);
+            view.BtnResp4.Click += (sender, e) => BtnResp_Click(sender, e, view.BtnResp4);
+        }
+
+        public void BtnResp_Click(object sender, EventArgs e, Button btn)
+        {
+            PressButton(btn.Content.ToString());
+            Console.Write("Funciona");
+        }
+
+        public void PressButton(string textBtn)
         {
             if (n < questions.Count)
             {
-                answerIsCorrect(textBtn);
-                updateQuestion(questions[sequenceQuestions[n]]);
+                AnswerIsCorrect(textBtn);
+                UpdateQuestion(questions[sequenceQuestions[n]]);
                 n++;
             }
             else
@@ -29,7 +55,7 @@ namespace ClassesLibrary.Controller
             }
         }
 
-        public void answerIsCorrect(string textBtn)
+        public void AnswerIsCorrect(string textBtn)
         {
             Question question = questions[sequenceQuestions[n - 1]];
             Console.WriteLine(textBtn + " == " + question.CorrectAnswer);
@@ -39,7 +65,7 @@ namespace ClassesLibrary.Controller
             }
         }
 
-        public void updateQuestion(Question nextQuestion)
+        public void UpdateQuestion(Question nextQuestion)
         {
             Console.WriteLine(nextQuestion);
             int i = 0;
@@ -53,7 +79,7 @@ namespace ClassesLibrary.Controller
             Console.WriteLine("Question updated\n\n");
         }
 
-        public void getSequence(int max)
+        public void GetSequence(int max)
         {
             //Generate a random sequence for questions in test
             Random rnd = new Random();

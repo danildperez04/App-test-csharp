@@ -34,7 +34,7 @@ namespace ClassesLibrary.Controller
             if (ValidateLogin())
             {
                 FrmMenu menuView = new FrmMenu();
-                //CMenu cMenu = new CMenu(menuView);
+                CMenu cMenu = new CMenu(menuView);
                 menuView.Show();
 
                 string carnet = view.TxtSignInCarnet.Text;

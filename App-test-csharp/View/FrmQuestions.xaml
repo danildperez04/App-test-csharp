@@ -10,9 +10,9 @@
         <Label Content="Label" HorizontalAlignment="Left" Margin="10,81,0,0" VerticalAlignment="Top"/>
         <Label x:Name="LblImagenPregunta" x:FieldModifier="public" Content="Label" HorizontalAlignment="Center" Margin="0,81,0,0" VerticalAlignment="Top"/>
         <Label x:Name="LblPregunta" x:FieldModifier="public" Content="PREGUNTA" HorizontalAlignment="Center" Margin="0,176,0,0" VerticalAlignment="Top" Width="684" HorizontalContentAlignment="Center" FontFamily="Arial Narrow" FontSize="18" FontWeight="Bold" Background="White"/>
-        <Button Content="Respuesta 1" HorizontalAlignment="Center" Margin="0,235,0,0" VerticalAlignment="Top" Width="684" Height="41" FontFamily="Arial Narrow" FontSize="14" FontWeight="Bold" Background="#24385B" Foreground="White"/>
-        <Button Content="Respuesta 2" HorizontalAlignment="Center" Margin="0,286,0,0" VerticalAlignment="Top" Width="684" Height="41" FontFamily="Arial Narrow" FontSize="14" FontWeight="Bold" Background="#24385B" Foreground="White"/>
-        <Button Content="Respuesta 3" HorizontalAlignment="Center" Margin="0,337,0,0" VerticalAlignment="Top" Width="684" Height="41" FontFamily="Arial Narrow" FontSize="14" FontWeight="Bold" Background="#24385B" Foreground="White"/>
-        <Button Content="Respuesta 4" HorizontalAlignment="Center" Margin="0,388,0,0" VerticalAlignment="Top" Width="684" Height="41" FontFamily="Arial Narrow" FontSize="14" FontWeight="Bold" Background="#24385B" Foreground="White"/>
+        <Button x:Name="BtnResp1" x:FieldModifier="public" Content="Respuesta 1" HorizontalAlignment="Center" Margin="0,235,0,0" VerticalAlignment="Top" Width="684" Height="41" FontFamily="Arial Narrow" FontSize="14" FontWeight="Bold" Background="#24385B" Foreground="White"/>
+        <Button x:Name="BtnResp2" x:FieldModifier="public" Content="Respuesta 2" HorizontalAlignment="Center" Margin="0,286,0,0" VerticalAlignment="Top" Width="684" Height="41" FontFamily="Arial Narrow" FontSize="14" FontWeight="Bold" Background="#24385B" Foreground="White"/>
+        <Button x:Name="BtnResp3" x:FieldModifier="public" Content="Respuesta 3" HorizontalAlignment="Center" Margin="0,337,0,0" VerticalAlignment="Top" Width="684" Height="41" FontFamily="Arial Narrow" FontSize="14" FontWeight="Bold" Background="#24385B" Foreground="White"/>
+        <Button x:Name="BtnResp4" x:FieldModifier="public" Content="Respuesta 4" HorizontalAlignment="Center" Margin="0,388,0,0" VerticalAlignment="Top" Width="684" Height="41" FontFamily="Arial Narrow" FontSize="14" FontWeight="Bold" Background="#24385B" Foreground="White"/>
     </Grid>
 </Window>
