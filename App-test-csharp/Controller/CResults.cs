@@ -56,6 +56,7 @@ namespace ClassesLibrary.Controller
 
                     try
                     {
+                        openLink.StartInfo.UseShellExecute = true;
                         openLink.StartInfo.FileName = actualLink;
                         openLink.Start();
                     }
