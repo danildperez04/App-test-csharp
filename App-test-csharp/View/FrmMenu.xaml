@@ -27,7 +27,7 @@
                     </Label>
                 </Border>
                 <Border Background="#40577B" BorderBrush="Silver" BorderThickness="1" CornerRadius="0,0,20,20" Margin="0,85,0,0" >
-                    <Label Content="Imcompleto" x:Name="LblEstadoA1" x:FieldModifier="public" Margin="1,1,-1,-1" Foreground="#FFEFF2F6" />
+                    <Label Content="Imcompleto" x:Name="LblEstadoA1" x:FieldModifier="public" Margin="1,1,-1,-1" Foreground="#FFEFF2F6"/>
                 </Border>
             </Grid>
 
