@@ -41,11 +41,5 @@ namespace App_test_csharp.Controller
 			temporizador.Start();
 			
 		}
-		
-		
-		
-		
-
-
 	}
 }

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Media;
+using System.Windows.Media.Imaging;
 
 namespace ClassesLibrary.Model
 {
@@ -17,7 +18,9 @@ namespace ClassesLibrary.Model
             this.questionLabel = questionLabel;
             this.answers = answers;
             this.isCorrect = false;
-            this.imageLabel = imageLabel;
+            ImageBrush imgBrush = new ImageBrush();
+            imgBrush.ImageSource = new BitmapImage(new Uri(@"" + src, UriKind.Relative));
+            this.imageLabel = imgBrush;
             this.correctAnswer = correctAnswer;
             this.link = link;
             this.idQuestion = idQuestion;
