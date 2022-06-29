@@ -33,31 +33,32 @@ namespace ClassesLibrary.Controller
         {
             if (ValidateLogin())
             {
+                CResults.Carnet = view.TxtSignInCarnet.Text;
                 FrmMenu menuView = new FrmMenu();
                 CMenu cMenu = new CMenu(menuView);
+                view.Close();
                 menuView.Show();
 
                 string carnet = view.TxtSignInCarnet.Text;
                 users = FileStream.GetUsers();
-                /*                    users.get(carnet).getTests().get(0).setStatus(true);
-                                    users.get(carnet).getTests().get(1).setStatus(true);
+                
                 if (users[carnet].Tests[0].Completed)
                 {
-                    menuView.LblEstadoA1.setText("Completado");
+                    menuView.LblEstadoA1.Content = "Completado";
                 }
                 if (users[carnet].Tests[1].Completed)
                 {
-                    menuView.LblEstadoA2.setText("Completado");
+                    menuView.LblEstadoA2.Content = "Completado";
                 }
                 if (users[carnet].Tests[2].Completed)
                 {
-                    menuView.LblEstadoB1.setText("Completado");
+                    menuView.LblEstadoB1.Content = "Completado";
                 }
                 if (users[carnet].Tests[3].Completed)
                 {
-                    menuView.LblEstadoB2.setText("Completado");
+                    menuView.LblEstadoB2.Content = "Completado";
                 }
-                */
+                
                 view.Close();
             }
             else
@@ -145,5 +146,6 @@ namespace ClassesLibrary.Controller
         FrmLogin view;
         User model;
         private Dictionary<string, User> users = new Dictionary<string, User>();
+        
     }
 }

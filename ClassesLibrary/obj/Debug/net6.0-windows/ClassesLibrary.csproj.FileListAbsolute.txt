@@ -10,3 +10,15 @@ C:\Users\Dani-\OneDrive\Documentos\App-test-csharp\ClassesLibrary\obj\Debug\net6
 C:\Users\Dani-\OneDrive\Documentos\App-test-csharp\ClassesLibrary\obj\Debug\net6.0-windows\refint\ClassesLibrary.dll
 C:\Users\Dani-\OneDrive\Documentos\App-test-csharp\ClassesLibrary\obj\Debug\net6.0-windows\ClassesLibrary.pdb
 C:\Users\Dani-\OneDrive\Documentos\App-test-csharp\ClassesLibrary\obj\Debug\net6.0-windows\ref\ClassesLibrary.dll
+C:\Users\50584\Source\Repos\App-test-csharp\ClassesLibrary\bin\Debug\net6.0-windows\ClassesLibrary.deps.json
+C:\Users\50584\Source\Repos\App-test-csharp\ClassesLibrary\bin\Debug\net6.0-windows\ClassesLibrary.dll
+C:\Users\50584\Source\Repos\App-test-csharp\ClassesLibrary\bin\Debug\net6.0-windows\ref\ClassesLibrary.dll
+C:\Users\50584\Source\Repos\App-test-csharp\ClassesLibrary\bin\Debug\net6.0-windows\ClassesLibrary.pdb
+C:\Users\50584\Source\Repos\App-test-csharp\ClassesLibrary\obj\Debug\net6.0-windows\ClassesLibrary.csproj.AssemblyReference.cache
+C:\Users\50584\Source\Repos\App-test-csharp\ClassesLibrary\obj\Debug\net6.0-windows\ClassesLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\50584\Source\Repos\App-test-csharp\ClassesLibrary\obj\Debug\net6.0-windows\ClassesLibrary.AssemblyInfoInputs.cache
+C:\Users\50584\Source\Repos\App-test-csharp\ClassesLibrary\obj\Debug\net6.0-windows\ClassesLibrary.AssemblyInfo.cs
+C:\Users\50584\Source\Repos\App-test-csharp\ClassesLibrary\obj\Debug\net6.0-windows\ClassesLibrary.csproj.CoreCompileInputs.cache
+C:\Users\50584\Source\Repos\App-test-csharp\ClassesLibrary\obj\Debug\net6.0-windows\ClassesLibrary.dll
+C:\Users\50584\Source\Repos\App-test-csharp\ClassesLibrary\obj\Debug\net6.0-windows\ref\ClassesLibrary.dll
+C:\Users\50584\Source\Repos\App-test-csharp\ClassesLibrary\obj\Debug\net6.0-windows\ClassesLibrary.pdb

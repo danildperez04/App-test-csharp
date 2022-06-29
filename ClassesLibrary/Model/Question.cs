@@ -12,11 +12,11 @@ namespace ClassesLibrary.Model
         //Constructors
         public Question() { }
 
-        public Question(string questionLabel, string[] answers, bool isCorrect, ImageBrush imageLabel, string correctAnswer, string link, int idQuestion)
+        public Question(String questionLabel, String[] answers, String src, int idQuestion, String correctAnswer, String link)
         {
             this.questionLabel = questionLabel;
             this.answers = answers;
-            this.isCorrect = isCorrect;
+            this.isCorrect = false;
             this.imageLabel = imageLabel;
             this.correctAnswer = correctAnswer;
             this.link = link;
