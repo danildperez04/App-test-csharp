@@ -32,16 +32,16 @@ namespace ClassesLibrary.Controller
             Test englishTest = new Test();
             CResults.TypeTest = "A1";
 
-            englishTest.AddQuestion(new Question("A1", new String[] { "Esta es la respuesta", "Si hay1", "no1", "Ya1" }, "/Images/pregunta (1).png", 0, "Esta es la respuesta", "https://www.britishcouncil.es/ingles/niveles/a1"));
-            englishTest.AddQuestion(new Question("Cual es la pregunta2", new String[] { "Esta es la respuesta", "Si hay2", "no2", "Ya2" }, "/Images/confuso.png", 1, "Esta es la respuesta", "https://www.britishcouncil.es/ingles/niveles/a1"));
-            englishTest.AddQuestion(new Question("Cual es la pregunta3", new String[] { "Esta es la respuesta", "Si hay3", "no3", "Ya3" }, "/Images/unicornio.png", 2, "Esta es la respuesta", "https://www.britishcouncil.es/ingles/niveles/a1"));
-            englishTest.AddQuestion(new Question("Cual es la pregunta4", new String[] { "Esta es la respuesta", "Si hay4", "no4", "Ya4" }, "/Images/idea.png", 3, "Esta es la respuesta", "https://www.britishcouncil.es/ingles/niveles/a1"));
-            englishTest.AddQuestion(new Question("Cual es la pregunta5", new String[] { "Esta es la respuesta", "Si hay5", "no5", "Ya5" }, "/Images/pensando.png", 4, "Esta es la respuesta", "https://www.britishcouncil.es/ingles/niveles/a1"));
-            englishTest.AddQuestion(new Question("Cual es la pregunta6", new String[] { "Esta es la respuesta", "Si hay6", "no6", "Ya6" }, "/Images/idea (1).png", 5, "Esta es la respuesta", "https://www.britishcouncil.es/ingles/niveles/a1"));
-            englishTest.AddQuestion(new Question("Cual es la pregunta7", new String[] { "Esta es la respuesta", "Si hay7", "no7", "Ya7" }, "/Images/pensar.png", 6, "Esta es la respuesta", "https://www.britishcouncil.es/ingles/niveles/a1"));
-            englishTest.AddQuestion(new Question("Cual es la pregunta8", new String[] { "Esta es la respuesta", "Si hay8", "no8", "Ya8" }, "/Images/profesor.png", 7, "Esta es la respuesta", "https://www.britishcouncil.es/ingles/niveles/a1"));
-            englishTest.AddQuestion(new Question("Cual es la pregunta9", new String[] { "Esta es la respuesta", "Si hay9", "no9", "Ya9" }, "/Images/reina.png", 8, "Esta es la respuesta", "https://www.britishcouncil.es/ingles/niveles/a1"));
-            englishTest.AddQuestion(new Question("Cual es la pregunta10", new String[] { "Esta es la respuesta", "Si hay10", "no10", "Ya10" }, "/Images/reino-unido.png", 9, "Esta es la respuesta", "https://www.britishcouncil.es/ingles/niveles/a1"));
+            englishTest.AddQuestion(new Question("A1", new String[] { "Esta es la respuesta", "Si hay1", "no1", "Ya1" }, "../../../Images/pregunta (1).png", 0, "Esta es la respuesta", "https://www.britishcouncil.es/ingles/niveles/a1"));
+            englishTest.AddQuestion(new Question("Cual es la pregunta2", new String[] { "Esta es la respuesta", "Si hay2", "no2", "Ya2" }, "../../../Images/confuso.png", 1, "Esta es la respuesta", "https://www.britishcouncil.es/ingles/niveles/a1"));
+            englishTest.AddQuestion(new Question("Cual es la pregunta3", new String[] { "Esta es la respuesta", "Si hay3", "no3", "Ya3" }, "../../../Images/unicornio.png", 2, "Esta es la respuesta", "https://www.britishcouncil.es/ingles/niveles/a1"));
+            englishTest.AddQuestion(new Question("Cual es la pregunta4", new String[] { "Esta es la respuesta", "Si hay4", "no4", "Ya4" }, "../../../Images/idea.png", 3, "Esta es la respuesta", "https://www.britishcouncil.es/ingles/niveles/a1"));
+            englishTest.AddQuestion(new Question("Cual es la pregunta5", new String[] { "Esta es la respuesta", "Si hay5", "no5", "Ya5" }, "../../../Images/pensando.png", 4, "Esta es la respuesta", "https://www.britishcouncil.es/ingles/niveles/a1"));
+            englishTest.AddQuestion(new Question("Cual es la pregunta6", new String[] { "Esta es la respuesta", "Si hay6", "no6", "Ya6" }, "../../../Images/idea (1).png", 5, "Esta es la respuesta", "https://www.britishcouncil.es/ingles/niveles/a1"));
+            englishTest.AddQuestion(new Question("Cual es la pregunta7", new String[] { "Esta es la respuesta", "Si hay7", "no7", "Ya7" }, "../../../Images/pensar.png", 6, "Esta es la respuesta", "https://www.britishcouncil.es/ingles/niveles/a1"));
+            englishTest.AddQuestion(new Question("Cual es la pregunta8", new String[] { "Esta es la respuesta", "Si hay8", "no8", "Ya8" }, "../../../Images/profesor.png", 7, "Esta es la respuesta", "https://www.britishcouncil.es/ingles/niveles/a1"));
+            englishTest.AddQuestion(new Question("Cual es la pregunta9", new String[] { "Esta es la respuesta", "Si hay9", "no9", "Ya9" }, "../../../Images/reina.png", 8, "Esta es la respuesta", "https://www.britishcouncil.es/ingles/niveles/a1"));
+            englishTest.AddQuestion(new Question("Cual es la pregunta10", new String[] { "Esta es la respuesta", "Si hay10", "no10", "Ya10" }, "../../../Images/reino-unido.png", 9, "Esta es la respuesta", "https://www.britishcouncil.es/ingles/niveles/a1"));
 
             CQuestions cQuestions = new CQuestions(frmQuestions, model, englishTest);
             view.Close();
@@ -58,15 +58,15 @@ namespace ClassesLibrary.Controller
             CResults.TypeTest = "A2";
 
             englishTest.AddQuestion(new Question("A1", new String[] { "Esta es la respuesta", "Si hay1", "no1", "Ya1" }, "/Images/pregunta (1).png", 0, "Esta es la respuesta", "https://www.britishcouncil.es/ingles/niveles/a1"));
-            englishTest.AddQuestion(new Question("Cual es la pregunta2", new String[] { "Esta es la respuesta", "Si hay2", "no2", "Ya2" }, "/Images/confuso.png", 1, "Esta es la respuesta", "https://www.britishcouncil.es/ingles/niveles/a1"));
-            englishTest.AddQuestion(new Question("Cual es la pregunta3", new String[] { "Esta es la respuesta", "Si hay3", "no3", "Ya3" }, "/Images/unicornio.png", 2, "Esta es la respuesta", "https://www.britishcouncil.es/ingles/niveles/a1"));
-            englishTest.AddQuestion(new Question("Cual es la pregunta4", new String[] { "Esta es la respuesta", "Si hay4", "no4", "Ya4" }, "/Images/idea.png", 3, "Esta es la respuesta", "https://www.britishcouncil.es/ingles/niveles/a1"));
-            englishTest.AddQuestion(new Question("Cual es la pregunta5", new String[] { "Esta es la respuesta", "Si hay5", "no5", "Ya5" }, "/Images/pensando.png", 4, "Esta es la respuesta", "https://www.britishcouncil.es/ingles/niveles/a1"));
-            englishTest.AddQuestion(new Question("Cual es la pregunta6", new String[] { "Esta es la respuesta", "Si hay6", "no6", "Ya6" }, "/Images/idea (1).png", 5, "Esta es la respuesta", "https://www.britishcouncil.es/ingles/niveles/a1"));
-            englishTest.AddQuestion(new Question("Cual es la pregunta7", new String[] { "Esta es la respuesta", "Si hay7", "no7", "Ya7" }, "/Images/pensar.png", 6, "Esta es la respuesta", "https://www.britishcouncil.es/ingles/niveles/a1"));
-            englishTest.AddQuestion(new Question("Cual es la pregunta8", new String[] { "Esta es la respuesta", "Si hay8", "no8", "Ya8" }, "/Images/profesor.png", 7, "Esta es la respuesta", "https://www.britishcouncil.es/ingles/niveles/a1"));
-            englishTest.AddQuestion(new Question("Cual es la pregunta9", new String[] { "Esta es la respuesta", "Si hay9", "no9", "Ya9" }, "/Images/reina.png", 8, "Esta es la respuesta", "https://www.britishcouncil.es/ingles/niveles/a1"));
-            englishTest.AddQuestion(new Question("Cual es la pregunta10", new String[] { "Esta es la respuesta", "Si hay10", "no10", "Ya10" }, "/Images/reino-unido.png", 9, "Esta es la respuesta", "https://www.britishcouncil.es/ingles/niveles/a1"));
+            englishTest.AddQuestion(new Question("Cual es la pregunta2", new String[] { "Esta es la respuesta", "Si hay2", "no2", "Ya2" }, "../../../Images/confuso.png", 1, "Esta es la respuesta", "https://www.britishcouncil.es/ingles/niveles/a1"));
+            englishTest.AddQuestion(new Question("Cual es la pregunta3", new String[] { "Esta es la respuesta", "Si hay3", "no3", "Ya3" }, "../../../Images/unicornio.png", 2, "Esta es la respuesta", "https://www.britishcouncil.es/ingles/niveles/a1"));
+            englishTest.AddQuestion(new Question("Cual es la pregunta4", new String[] { "Esta es la respuesta", "Si hay4", "no4", "Ya4" }, "../../../Images/idea.png", 3, "Esta es la respuesta", "https://www.britishcouncil.es/ingles/niveles/a1"));
+            englishTest.AddQuestion(new Question("Cual es la pregunta5", new String[] { "Esta es la respuesta", "Si hay5", "no5", "Ya5" }, "../../../Images/pensando.png", 4, "Esta es la respuesta", "https://www.britishcouncil.es/ingles/niveles/a1"));
+            englishTest.AddQuestion(new Question("Cual es la pregunta6", new String[] { "Esta es la respuesta", "Si hay6", "no6", "Ya6" }, "../../../Images/idea (1).png", 5, "Esta es la respuesta", "https://www.britishcouncil.es/ingles/niveles/a1"));
+            englishTest.AddQuestion(new Question("Cual es la pregunta7", new String[] { "Esta es la respuesta", "Si hay7", "no7", "Ya7" }, "../../../Images/pensar.png", 6, "Esta es la respuesta", "https://www.britishcouncil.es/ingles/niveles/a1"));
+            englishTest.AddQuestion(new Question("Cual es la pregunta8", new String[] { "Esta es la respuesta", "Si hay8", "no8", "Ya8" }, "../../../Images/profesor.png", 7, "Esta es la respuesta", "https://www.britishcouncil.es/ingles/niveles/a1"));
+            englishTest.AddQuestion(new Question("Cual es la pregunta9", new String[] { "Esta es la respuesta", "Si hay9", "no9", "Ya9" }, "../../../Images/reina.png", 8, "Esta es la respuesta", "https://www.britishcouncil.es/ingles/niveles/a1"));
+            englishTest.AddQuestion(new Question("Cual es la pregunta10", new String[] { "Esta es la respuesta", "Si hay10", "no10", "Ya10" }, "../../../Images/reino-unido.png", 9, "Esta es la respuesta", "https://www.britishcouncil.es/ingles/niveles/a1"));
 
             CQuestions cQuestions = new CQuestions(frmQuestions, model, englishTest);
             view.Close();
@@ -82,15 +82,15 @@ namespace ClassesLibrary.Controller
             CResults.TypeTest = "B1";
 
             englishTest.AddQuestion(new Question("A1", new String[] { "Esta es la respuesta", "Si hay1", "no1", "Ya1" }, "/Images/pregunta (1).png", 0, "Esta es la respuesta", "https://www.britishcouncil.es/ingles/niveles/a1"));
-            englishTest.AddQuestion(new Question("Cual es la pregunta2", new String[] { "Esta es la respuesta", "Si hay2", "no2", "Ya2" }, "/Images/confuso.png", 1, "Esta es la respuesta", "https://www.britishcouncil.es/ingles/niveles/a1"));
-            englishTest.AddQuestion(new Question("Cual es la pregunta3", new String[] { "Esta es la respuesta", "Si hay3", "no3", "Ya3" }, "/Images/unicornio.png", 2, "Esta es la respuesta", "https://www.britishcouncil.es/ingles/niveles/a1"));
-            englishTest.AddQuestion(new Question("Cual es la pregunta4", new String[] { "Esta es la respuesta", "Si hay4", "no4", "Ya4" }, "/Images/idea.png", 3, "Esta es la respuesta", "https://www.britishcouncil.es/ingles/niveles/a1"));
-            englishTest.AddQuestion(new Question("Cual es la pregunta5", new String[] { "Esta es la respuesta", "Si hay5", "no5", "Ya5" }, "/Images/pensando.png", 4, "Esta es la respuesta", "https://www.britishcouncil.es/ingles/niveles/a1"));
-            englishTest.AddQuestion(new Question("Cual es la pregunta6", new String[] { "Esta es la respuesta", "Si hay6", "no6", "Ya6" }, "/Images/idea (1).png", 5, "Esta es la respuesta", "https://www.britishcouncil.es/ingles/niveles/a1"));
-            englishTest.AddQuestion(new Question("Cual es la pregunta7", new String[] { "Esta es la respuesta", "Si hay7", "no7", "Ya7" }, "/Images/pensar.png", 6, "Esta es la respuesta", "https://www.britishcouncil.es/ingles/niveles/a1"));
-            englishTest.AddQuestion(new Question("Cual es la pregunta8", new String[] { "Esta es la respuesta", "Si hay8", "no8", "Ya8" }, "/Images/profesor.png", 7, "Esta es la respuesta", "https://www.britishcouncil.es/ingles/niveles/a1"));
-            englishTest.AddQuestion(new Question("Cual es la pregunta9", new String[] { "Esta es la respuesta", "Si hay9", "no9", "Ya9" }, "/Images/reina.png", 8, "Esta es la respuesta", "https://www.britishcouncil.es/ingles/niveles/a1"));
-            englishTest.AddQuestion(new Question("Cual es la pregunta10", new String[] { "Esta es la respuesta", "Si hay10", "no10", "Ya10" }, "/Images/reino-unido.png", 9, "Esta es la respuesta", "https://www.britishcouncil.es/ingles/niveles/a1"));
+            englishTest.AddQuestion(new Question("Cual es la pregunta2", new String[] { "Esta es la respuesta", "Si hay2", "no2", "Ya2" }, "../../../Images/confuso.png", 1, "Esta es la respuesta", "https://www.britishcouncil.es/ingles/niveles/a1"));
+            englishTest.AddQuestion(new Question("Cual es la pregunta3", new String[] { "Esta es la respuesta", "Si hay3", "no3", "Ya3" }, "../../../Images/unicornio.png", 2, "Esta es la respuesta", "https://www.britishcouncil.es/ingles/niveles/a1"));
+            englishTest.AddQuestion(new Question("Cual es la pregunta4", new String[] { "Esta es la respuesta", "Si hay4", "no4", "Ya4" }, "../../../Images/idea.png", 3, "Esta es la respuesta", "https://www.britishcouncil.es/ingles/niveles/a1"));
+            englishTest.AddQuestion(new Question("Cual es la pregunta5", new String[] { "Esta es la respuesta", "Si hay5", "no5", "Ya5" }, "../../../Images/pensando.png", 4, "Esta es la respuesta", "https://www.britishcouncil.es/ingles/niveles/a1"));
+            englishTest.AddQuestion(new Question("Cual es la pregunta6", new String[] { "Esta es la respuesta", "Si hay6", "no6", "Ya6" }, "../../../Images/idea (1).png", 5, "Esta es la respuesta", "https://www.britishcouncil.es/ingles/niveles/a1"));
+            englishTest.AddQuestion(new Question("Cual es la pregunta7", new String[] { "Esta es la respuesta", "Si hay7", "no7", "Ya7" }, "../../../Images/pensar.png", 6, "Esta es la respuesta", "https://www.britishcouncil.es/ingles/niveles/a1"));
+            englishTest.AddQuestion(new Question("Cual es la pregunta8", new String[] { "Esta es la respuesta", "Si hay8", "no8", "Ya8" }, "../../../Images/profesor.png", 7, "Esta es la respuesta", "https://www.britishcouncil.es/ingles/niveles/a1"));
+            englishTest.AddQuestion(new Question("Cual es la pregunta9", new String[] { "Esta es la respuesta", "Si hay9", "no9", "Ya9" }, "../../../Images/reina.png", 8, "Esta es la respuesta", "https://www.britishcouncil.es/ingles/niveles/a1"));
+            englishTest.AddQuestion(new Question("Cual es la pregunta10", new String[] { "Esta es la respuesta", "Si hay10", "no10", "Ya10" }, "../../../Images/reino-unido.png", 9, "Esta es la respuesta", "https://www.britishcouncil.es/ingles/niveles/a1"));
 
             CQuestions cQuestions = new CQuestions(frmQuestions, model, englishTest);
             view.Close();
