@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Threading;
 using App_test_csharp.View;
+using ClassesLibrary.Controller;
+
 namespace App_test_csharp.Controller
 {
     public class CTemporizador : Window
@@ -18,8 +20,8 @@ namespace App_test_csharp.Controller
 			ventana.Show();
 
 			temporizador.Interval = new TimeSpan(0, 0, 0, 0, 1000);
-			int segundos = 9;
-			int minutos = 0;
+			int segundos = 59;
+			int minutos = 9;
 			
 			temporizador.Tick += (a, b) =>
 			{
@@ -35,11 +37,10 @@ namespace App_test_csharp.Controller
 					{	
 						
 						minutos++;
-						MessageBox.Show("LO SENTIMOS HA REPROBADO EL EXAMEN!!", "TEST", MessageBoxButton.OK, MessageBoxImage.Information);
+						MessageBox.Show("LO SENTIMOS HA REPROBADO EL EXAMEN!!, POR FAVOR VOLVER A EJECUTAR Y INGRESAR NUEVAMENTE", "TEST", MessageBoxButton.OK, MessageBoxImage.Information);
 						temporizador.Stop();
 						ventana.Close();
-						FrmMenu frmMenu = new FrmMenu();
-						frmMenu.Show();
+						Environment.Exit(0);
 
 
 					}

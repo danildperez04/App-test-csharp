@@ -48,6 +48,7 @@ namespace ClassesLibrary.Controller
             }
             else
             {
+
                 FrmResultados frmResults = new FrmResultados();
                 CResults cResults = new CResults(frmResults, questions);
                 frmResults.Show();
