@@ -91,19 +91,19 @@ namespace ClassesLibrary.Controller
                     {
                         case "A1":
                             users[Carnet].Tests.ElementAt(0).Completed = true;
-                            FileStream.setNewUser(users[Carnet]);
+                            FileStream.verificarUser(users[Carnet]);
                             break;
                         case "A2":
                             users[Carnet].Tests.ElementAt(1).Completed = true;
-                            FileStream.setNewUser(users[Carnet]);
+                            FileStream.verificarUser(users[Carnet]);
                             break;
                         case "B1":
                             users[Carnet].Tests.ElementAt(2).Completed = true;
-                            FileStream.setNewUser(users[Carnet]);
+                            FileStream.verificarUser(users[Carnet]);
                             break;
                         case "B2":
                             users[Carnet].Tests.ElementAt(3).Completed = true;
-                            FileStream.setNewUser(users[Carnet]);
+                            FileStream.verificarUser(users[Carnet]);
                             break;
                         default:
                             Console.WriteLine("Error al validar test");
