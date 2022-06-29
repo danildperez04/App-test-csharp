@@ -19,10 +19,10 @@ namespace ClassesLibrary.Controller
 
         public void initButtons()
         {
-            view.rosa.Click += (sender, e) => rosa_Click(sender, e);
-            view.verde.Click += (sender, e) => verde_Click(sender, e);
-            view.verdeAbajo.Click += (sender, e) => verdeAbajo_Click(sender, e);
-            view.amarillo.Click += (sender, e) => amarillo_Click(sender, e);
+            view.A1.MouseDown += (sender, e) => rosa_Click(sender, e);
+            view.A2.MouseDown += (sender, e) => verde_Click(sender, e);
+            view.B1.MouseDown += (sender, e) => amarillo_Click(sender, e);
+            view.B2.MouseDown += (sender, e) => verdeAbajo_Click(sender, e);
         }
 
         public void rosa_Click(object sender, EventArgs e)

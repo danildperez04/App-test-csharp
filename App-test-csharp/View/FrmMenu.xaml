@@ -18,22 +18,22 @@
                 <ColumnDefinition Width="19*"/>
             </Grid.ColumnDefinitions>
 
-            <Grid Background="#121F3D"  Margin="75,50,78,247">
+            <Grid x:Name="A1" x:FieldModifier="public" Background="#121F3D"  Margin="75,50,78,247">
                 <Border Background="#FF6363" BorderBrush="Silver" BorderThickness="1" CornerRadius="20,20,20,20" >
-                    <Label HorizontalAlignment="Left" Width="70" Margin="0,9,0,50">
+                    <Label HorizontalAlignment="Left" Width="61" Margin="9,9,0,0" Height="59" VerticalAlignment="Top">
                         <Label.Background>
                             <ImageBrush ImageSource="/Images/eng.png"/>
                         </Label.Background>
                     </Label>
                 </Border>
                 <Border Background="#40577B" BorderBrush="Silver" BorderThickness="1" CornerRadius="0,0,20,20" Margin="0,85,0,0" >
-                    <Label Content="Imcompleto" x:Name="LblEstadoA1" x:FieldModifier="public" Margin="1,1,-1,-1" Foreground="#FFEFF2F6" />
+                    <Label Content="Incompleto" x:Name="LblEstadoA1" x:FieldModifier="public" Margin="1,1,-1,-1" Foreground="#FFEFF2F6" FontSize="18" FontFamily="Segoe UI Semibold" FontStretch="Medium" FontWeight="Regular" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" />
                 </Border>
             </Grid>
 
-            <Grid Background="#121F3D" Margin="43,50,75,247" Grid.Column="1">
+            <Grid  x:Name="A2" x:FieldModifier="public" Background="#121F3D" Margin="43,50,75,247" Grid.Column="1">
                 <Border Background="#FF4DE000" BorderBrush="Silver" BorderThickness="1" CornerRadius="20,20,20,20" >
-                    <Label Margin="0,9,185,50">
+                    <Label Margin="9,9,0,0" HorizontalAlignment="Left" Width="66" Height="59" VerticalAlignment="Top">
                         <Label.Background>
                             <ImageBrush ImageSource="/Images/atom.png"/>
                         </Label.Background>
@@ -43,42 +43,79 @@
                     </Label>
                 </Border>
                 <Border Background="#40577B" BorderBrush="Silver" BorderThickness="1" CornerRadius="0,0,20,20" Margin="0,85,0,0" >
-                    <Label Content="Imcompleto" x:Name="LblEstadoA2" x:FieldModifier="public" Foreground="#FFEFF2F6"/>
+                    <Label Content="Incompleto" x:Name="LblEstadoA2" x:FieldModifier="public" Foreground="#FFEFF2F6" FontSize="18" FontFamily="Segoe UI Semibold" FontStretch="Medium" FontWeight="Regular" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                 </Border>
             </Grid>
 
-            <Grid Background="#121F3D" Margin="43,250,75,56" Grid.Column="1">
-                <Border Background="#97FA9C" BorderBrush="Silver" BorderThickness="1" CornerRadius="20,20,20,20" Margin="0,-4,0,-5" >
-                    <Label  HorizontalAlignment="Left" Width="72" Margin="0,9,0,50">
-                        <Label.Background>
-                            <ImageBrush ImageSource="/Images/brain.png"/>
-                        </Label.Background>
-                    </Label>
-                </Border>
-                <Border Background="#40577B" BorderBrush="Silver" BorderThickness="1" CornerRadius="0,0,20,20" Margin="0,79,0,-5" >
-                    <Label Content="Imcompleto" x:Name="LblEstadoB2" x:FieldModifier="public" Foreground="#FFEFF2F6"/>
-                </Border>
-            </Grid>
-            <Grid Background="#121F3D"  Margin="80,250,78,56">
+
+            <Grid  x:Name="B1" x:FieldModifier="public" Background="#121F3D"  Margin="80,250,78,56">
                 <Border Background="#FFF72E" BorderBrush="Silver" BorderThickness="1" CornerRadius="20,20,20,20" Margin="-5,-4,5,-5" >
-                    <Label Margin="0,0,185,50">
+                    <Label Margin="9,0,0,0" HorizontalAlignment="Left" Width="66" Height="68" VerticalAlignment="Top">
                         <Label.Background>
                             <ImageBrush ImageSource="/Images/aprender-en-linea.png"/>
                         </Label.Background>
                     </Label>
                 </Border>
                 <Border Background="#40577B" BorderBrush="Silver" BorderThickness="1" CornerRadius="0,0,20,20" Margin="-5,79,5,-5" >
-                    <Label Content="Imcompleto" x:Name="LblEstadoB1" x:FieldModifier="public" Foreground="#FFEFF2F6"/>
+                    <Label Content="Incompleto" x:Name="LblEstadoB1" x:FieldModifier="public" Foreground="#FFEFF2F6" FontSize="18" FontFamily="Segoe UI Semibold" FontStretch="Medium" FontWeight="Regular" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                 </Border>
             </Grid>
-            <Button Content="Iniciar" x:Name="rosa" x:FieldModifier="public" HorizontalAlignment="Left" Margin="279,142,0,0" VerticalAlignment="Top" Width="45"/>
-            <Button Content="Iniciar" x:Name="amarillo" x:FieldModifier="public" HorizontalAlignment="Left" Margin="279,338,0,0" VerticalAlignment="Top" Width="45" RenderTransformOrigin="0.858,0.608"/>
-            <Button Content="Iniciar" x:Name="verde" x:FieldModifier="public" Margin="236,140,99,0" VerticalAlignment="Top" RenderTransformOrigin="0.75,0.612" Grid.Column="1"/>
-            <Button Content="Iniciar" x:Name="verdeAbajo" x:FieldModifier="public" HorizontalAlignment="Left" Margin="236,333,0,0" VerticalAlignment="Top" Width="45" Grid.Column="1"/>
+            <Grid  x:Name="B2" x:FieldModifier="public" Background="#121F3D" Margin="43,250,75,56" Grid.Column="1">
+                <Border Background="#97FA9C" BorderBrush="Silver" BorderThickness="1" CornerRadius="20,20,20,20" Margin="0,-4,0,-5" >
+                    <Label  HorizontalAlignment="Left" Width="63" Margin="9,9,0,0" Height="59" VerticalAlignment="Top">
+                        <Label.Background>
+                            <ImageBrush ImageSource="/Images/brain.png"/>
+                        </Label.Background>
+                    </Label>
+                </Border>
+                <Border Background="#40577B" BorderBrush="Silver" BorderThickness="1" CornerRadius="0,0,20,20" Margin="0,79,0,-5" >
+                    <Label Content="Incompleto" x:Name="LblEstadoB2" x:FieldModifier="public" Foreground="#FFEFF2F6" FontSize="18" FontFamily="Segoe UI Semibold" FontStretch="Medium" FontWeight="Regular" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </Border>
+            </Grid>
 
 
 
         </Grid>
+        <Label Content="A1" HorizontalAlignment="Left" Margin="163,66,0,0" VerticalAlignment="Top" Width="151" Height="49" HorizontalContentAlignment="Left" FontFamily="Candara" FontSize="40" Foreground="Black" BorderThickness="4,0,0,0" RenderTransformOrigin="0.5,0.5" FontWeight="Heavy">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-8" Y="-3"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label Content="A2" HorizontalAlignment="Left" Margin="163,263,0,0" VerticalAlignment="Top" Width="151" Height="49" HorizontalContentAlignment="Left" FontFamily="Candara" FontSize="40" Foreground="Black" BorderThickness="4,0,0,0" RenderTransformOrigin="0.5,0.5" FontWeight="Heavy">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-8" Y="-3"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label Content="B1" HorizontalAlignment="Left" Margin="149,66,0,0" VerticalAlignment="Top" Width="151" Height="49" Grid.Column="1" HorizontalContentAlignment="Left" FontFamily="Candara" FontSize="40" Foreground="Black" BorderThickness="4,0,0,0" RenderTransformOrigin="0.5,0.5" FontWeight="Heavy">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-8" Y="-3"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label Content="B2" HorizontalAlignment="Left" Margin="149,263,0,0" VerticalAlignment="Top" Width="151" Height="49" Grid.Column="1" HorizontalContentAlignment="Left" FontFamily="Candara" FontSize="40" Foreground="Black" BorderThickness="4,0,0,0" RenderTransformOrigin="0.5,0.5" FontWeight="Heavy">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-8" Y="-3"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
 
     </Grid>
 </Window>

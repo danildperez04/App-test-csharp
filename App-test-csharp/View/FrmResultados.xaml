@@ -18,7 +18,7 @@
             </Grid.ColumnDefinitions>
             <Label Content="Tus Resultados!" HorizontalAlignment="Left" Margin="20,37,0,0" VerticalAlignment="Top"  FontSize="24" FontWeight="Bold" Foreground="White"/>
             <Label Content="Acá podrás ver tus resultados de cada una de las preguntas de tu &#10; examen, y adémas poder repasar cada uno de los temas" HorizontalAlignment="Left" Margin="20,83,0,0" VerticalAlignment="Top" FontSize="17" Foreground="White" Grid.ColumnSpan="2" Width="527"/>
-            <Label x:Name="Score" x:FieldModifier="public" Content="0   |   0/10" HorizontalAlignment="Left" Height="59" Margin="163,58,0,0" VerticalAlignment="Top" Width="191" FontSize="38" FontWeight="Bold" Foreground="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.Column="1" AutomationProperties.AcceleratorKey=""/>
+            <Label x:Name="Score" x:FieldModifier="public" Content="0   |   0/10" HorizontalAlignment="Left" Height="59" Margin="128,58,0,0" VerticalAlignment="Top" Width="191" FontSize="38" FontWeight="Bold" Foreground="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.Column="1" AutomationProperties.AcceleratorKey=""/>
         </Grid>
         <ScrollViewer Grid.Row="1" >
             <Grid Height="605" Width="800" Background="#FF12203D">

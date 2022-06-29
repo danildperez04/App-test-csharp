@@ -38,7 +38,7 @@ namespace ClassesLibrary.Controller
                     acum++;
                 }
             }
-            view.Score.Content = acum + " | " + acum + "/10";
+            view.Score.Content = acum*10 + "% | " + acum + "/10";
         }
 
         public void initBtnsHelp()
@@ -66,7 +66,7 @@ namespace ClassesLibrary.Controller
                 Label actualQuestionLabel = questionsLabel[i];
                 actualQuestionLabel.Content = questions[i].QuestionLabel;
                 Color verde = (Color)ColorConverter.ConvertFromString("#FF00C807");
-                Color rojo = (Color)ColorConverter.ConvertFromString("#FF00C807");
+                Color rojo = (Color)ColorConverter.ConvertFromString("#CB3234");
                 if (questions[i].IsCorrect)
                 {
                     actualQuestionLabel.BorderBrush = new SolidColorBrush(verde);
