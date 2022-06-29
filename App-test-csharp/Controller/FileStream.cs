@@ -34,22 +34,8 @@ namespace ClassesLibrary.Controller
 
         public static void setNewUser(User user)
         {
-            if (user.Carnet == FileStream.GetUsers()[CResults.Carnet].Carnet)
-            {
-                try
-                {
-                    users[CResults.Carnet] = user;
-                    string json = JsonSerializer.Serialize(users);
-                    File.WriteAllText(fileName, json);
-
-                }
-                catch (IOException io)
-                {
-                    Console.WriteLine("Error al actualizar datos");
-                }
-            }
-            else
-            {
+           
+           
                 try
                 {
                     users.Add(user.Carnet, user);
@@ -67,8 +53,29 @@ namespace ClassesLibrary.Controller
                     Console.WriteLine("Ha ocurrido un error! \nLa ejecucion del programa ha sido interrumpida\n" + io.ToString());
                 }
 
-            }
             
+            
+        }
+        public static void verificarUser(User user)
+        {
+            if (user.Carnet == FileStream.GetUsers()[CResults.Carnet].Carnet)
+            {
+                try
+                {
+                    users[CResults.Carnet] = user;
+                    string json = JsonSerializer.Serialize(users);
+                    File.WriteAllText(fileName, json);
+
+                }
+                catch (IOException io)
+                {
+                    Console.WriteLine("Error al actualizar datos");
+                }
+            }
+            else
+            {
+                Console.Write("Error al comprobar usuario");
+            }
         }
 
 

@@ -4,17 +4,29 @@
 winexe
 C#
 .cs
+<<<<<<< HEAD
 C:\Users\Dani-\OneDrive\Documentos\App-test-csharp\App-test-csharp\obj\Debug\net6.0-windows\
+=======
+C:\Users\50584\source\repos\App-test-csharp\App-test-csharp\obj\Debug\net6.0-windows\
+>>>>>>> d11d2ed5b3772d1a0820429613dd37740681075a
 App_test_csharp
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
+<<<<<<< HEAD
 C:\Users\Dani-\OneDrive\Documentos\App-test-csharp\App-test-csharp\App.xaml
 4-1235396211
 
 13-1127669164
 204-149845177
+=======
+C:\Users\50584\source\repos\App-test-csharp\App-test-csharp\App.xaml
+4-1235396211
+
+13-1127669164
+2041025139478
+>>>>>>> d11d2ed5b3772d1a0820429613dd37740681075a
 View\FrmLogin.xaml;View\FrmMenu.xaml;View\FrmQuestions.xaml;View\FrmResultados.xaml;
 
-False
+True
 
