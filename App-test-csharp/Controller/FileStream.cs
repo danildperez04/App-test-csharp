@@ -34,22 +34,41 @@ namespace ClassesLibrary.Controller
 
         public static void setNewUser(User user)
         {
-            try
+            if (user.Carnet == FileStream.GetUsers()[CResults.Carnet].Carnet)
             {
-                users.Add(user.Carnet, user);
-                string json = JsonSerializer.Serialize(users);
-                File.WriteAllText(fileName, json);
+                try
+                {
+                    users[CResults.Carnet] = user;
+                    string json = JsonSerializer.Serialize(users);
+                    File.WriteAllText(fileName, json);
 
-                Console.WriteLine("SE CREO EL ARCHIVO");
+                }
+                catch (IOException io)
+                {
+                    Console.WriteLine("Error al actualizar datos");
+                }
             }
-            catch (FileNotFoundException)
+            else
             {
-                Console.WriteLine("Ha ocurrido un error! \nNo hemos encontrado la ruta del archivo especificado");
+                try
+                {
+                    users.Add(user.Carnet, user);
+                    string json = JsonSerializer.Serialize(users);
+                    File.WriteAllText(fileName, json);
+
+                    Console.WriteLine("SE CREO EL ARCHIVO");
+                }
+                catch (FileNotFoundException)
+                {
+                    Console.WriteLine("Ha ocurrido un error! \nNo hemos encontrado la ruta del archivo especificado");
+                }
+                catch (IOException io)
+                {
+                    Console.WriteLine("Ha ocurrido un error! \nLa ejecucion del programa ha sido interrumpida\n" + io.ToString());
+                }
+
             }
-            catch (IOException io)
-            {
-                Console.WriteLine("Ha ocurrido un error! \nLa ejecucion del programa ha sido interrumpida\n" + io.ToString());
-            }
+            
         }
 
 

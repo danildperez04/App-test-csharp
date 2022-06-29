@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="FrmQuestions" Height="490" Width="800">
     <Grid Background="#FF0C1532">
-        <Label Content="Label" HorizontalAlignment="Left" Margin="10,81,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="LblTemporizador" x:FieldModifier="public" Content="10:00" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="80" Foreground="#FFEFF2F6" FontSize="30"/>
         <Label x:Name="LblImagenPregunta" x:FieldModifier="public" Content="Label" HorizontalAlignment="Center" Margin="0,81,0,0" VerticalAlignment="Top"/>
         <Label x:Name="LblPregunta" x:FieldModifier="public" Content="PREGUNTA" HorizontalAlignment="Center" Margin="0,176,0,0" VerticalAlignment="Top" Width="684" HorizontalContentAlignment="Center" FontFamily="Arial Narrow" FontSize="18" FontWeight="Bold" Background="White"/>
         <Button x:Name="BtnResp1" x:FieldModifier="public" Content="Respuesta 1" HorizontalAlignment="Center" Margin="0,235,0,0" VerticalAlignment="Top" Width="684" Height="41" FontFamily="Arial Narrow" FontSize="14" FontWeight="Bold" Background="#24385B" Foreground="White"/>

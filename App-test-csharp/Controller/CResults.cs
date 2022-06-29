@@ -22,11 +22,15 @@ namespace ClassesLibrary.Controller
             initBtnsHelp();
             initQuestionsLabel();
             initScore();
+            updateTest();
         }
+
+        public static string TypeTest { get => typeTest; set => typeTest = value; }
+        public static string Carnet { get => carnet; set => carnet = value; }
 
         public void initScore()
         {
-            float acum = 0;
+            
             for (int i = 0; i < 10; i++)
             {
                 if (questions[i].IsCorrect)
@@ -34,7 +38,7 @@ namespace ClassesLibrary.Controller
                     acum++;
                 }
             }
-            view.Score.Content = acum / 10 * 100 + "% |  " + Math.Round(acum) + "/10";
+            view.Score.Content = acum + " | " + acum + "/10";
         }
 
         public void initBtnsHelp()
@@ -74,6 +78,44 @@ namespace ClassesLibrary.Controller
             }
         }
 
+        public void updateTest()
+        {
+
+            if (acum > 8)
+            {
+                users = FileStream.GetUsers();
+
+                if (users != null && users[Carnet] != null)
+                {
+                    switch (TypeTest)
+                    {
+                        case "A1":
+                            users[Carnet].Tests.ElementAt(0).Completed = true;
+                            FileStream.setNewUser(users[Carnet]);
+                            break;
+                        case "A2":
+                            users[Carnet].Tests.ElementAt(1).Completed = true;
+                            FileStream.setNewUser(users[Carnet]);
+                            break;
+                        case "B1":
+                            users[Carnet].Tests.ElementAt(2).Completed = true;
+                            FileStream.setNewUser(users[Carnet]);
+                            break;
+                        case "B2":
+                            users[Carnet].Tests.ElementAt(3).Completed = true;
+                            FileStream.setNewUser(users[Carnet]);
+                            break;
+                        default:
+                            Console.WriteLine("Error al validar test");
+                            break;
+                    }
+
+                }
+            }
+        }
+        private int acum = 0;
+        private Dictionary<string, User> users = new Dictionary<string, User>();
+        private static String typeTest;
         private FrmResultados view;
         private static string carnet;
         private Button[] btnsHelp = new Button[10];
@@ -81,5 +123,7 @@ namespace ClassesLibrary.Controller
         private List<Question> questions = null;
         private string score = null;
         private int n = 1;
+
+        
     }
 }

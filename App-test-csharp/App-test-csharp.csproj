@@ -7,9 +7,29 @@
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
     <StartupObject>App_test_csharp.App</StartupObject>
+    <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Images\aprender-en-linea.png" />
+    <None Remove="Images\atom.png" />
+    <None Remove="Images\avion-de-papel %281%29.png" />
+    <None Remove="Images\ayudar.png" />
+    <None Remove="Images\brain.png" />
+    <None Remove="Images\confuso.png" />
+    <None Remove="Images\eng.png" />
+    <None Remove="Images\estrella.png" />
+    <None Remove="Images\estrellas.png" />
+    <None Remove="Images\idea %281%29.png" />
+    <None Remove="Images\idea.png" />
+    <None Remove="Images\pensando.png" />
+    <None Remove="Images\pensar.png" />
+    <None Remove="Images\pregunta %281%29.png" />
+    <None Remove="Images\profesor.png" />
+    <None Remove="Images\reina.png" />
+    <None Remove="Images\reino-unido.png" />
+    <None Remove="Images\unicornio.png" />
+    <None Remove="Images\user.png" />
     <None Remove="View\user.png" />
   </ItemGroup>
 
@@ -22,6 +42,25 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Images\aprender-en-linea.png" />
+    <Resource Include="Images\atom.png" />
+    <Resource Include="Images\avion-de-papel (1).png" />
+    <Resource Include="Images\ayudar.png" />
+    <Resource Include="Images\brain.png" />
+    <Resource Include="Images\confuso.png" />
+    <Resource Include="Images\eng.png" />
+    <Resource Include="Images\estrella.png" />
+    <Resource Include="Images\estrellas.png" />
+    <Resource Include="Images\idea (1).png" />
+    <Resource Include="Images\idea.png" />
+    <Resource Include="Images\pensando.png" />
+    <Resource Include="Images\pensar.png" />
+    <Resource Include="Images\pregunta (1).png" />
+    <Resource Include="Images\profesor.png" />
+    <Resource Include="Images\reina.png" />
+    <Resource Include="Images\reino-unido.png" />
+    <Resource Include="Images\unicornio.png" />
+    <Resource Include="Images\user.png" />
     <Resource Include="View\user.png" />
   </ItemGroup>
 
