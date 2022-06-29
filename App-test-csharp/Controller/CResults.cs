@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
 using System.Windows.Media;
+using System.Diagnostics;
 
 namespace ClassesLibrary.Controller
 {
@@ -47,12 +48,21 @@ namespace ClassesLibrary.Controller
             {
                 Button actualButton = btnsHelp[i];
                 string actualLink = questions[i].Link;
-                //Falta logica de links
                 actualButton.Click += actualButton_Click;
 
                 void actualButton_Click(object sender, EventArgs e)
                 {
-                    System.Diagnostics.Process.Start(actualLink);
+                    Process openLink = new Process();
+
+                    try
+                    {
+                        openLink.StartInfo.FileName = actualLink;
+                        openLink.Start();
+                    }
+                    catch (Exception error)
+                    {
+                        Console.WriteLine(error.Message);
+                    }
                 }
             }
         }
@@ -66,7 +76,7 @@ namespace ClassesLibrary.Controller
                 Label actualQuestionLabel = questionsLabel[i];
                 actualQuestionLabel.Content = questions[i].QuestionLabel;
                 Color verde = (Color)ColorConverter.ConvertFromString("#FF00C807");
-                Color rojo = (Color)ColorConverter.ConvertFromString("#FF00C807");
+                Color rojo = (Color)ColorConverter.ConvertFromString("#CB3234");
                 if (questions[i].IsCorrect)
                 {
                     actualQuestionLabel.BorderBrush = new SolidColorBrush(verde);
