@@ -31,41 +31,53 @@ namespace ClassesLibrary.Controller
 
         public void BtnSignIn_Click(object sender, EventArgs e)
         {
-            if (ValidateLogin())
-            {
-                CResults.Carnet = view.TxtSignInCarnet.Text;
-                FrmMenu menuView = new FrmMenu();
-                CMenu cMenu = new CMenu(menuView);
-                view.Close();
-                menuView.Show();
+            string password = view.TxtPassword.Password.ToString();
+            string carnet = view.TxtSignInCarnet.Text.Trim();
 
-                string carnet = view.TxtSignInCarnet.Text;
-                users = FileStream.GetUsers();
-                
-                if (users[carnet].Tests[0].Completed)
+            if (!(password.Equals("") || carnet.Equals("-")))
+            {
+                if (ValidateLogin())
                 {
-                    menuView.LblEstadoA1.Content = "Completado";
+                    CResults.Carnet = view.TxtSignInCarnet.Text;
+                    FrmMenu menuView = new FrmMenu();
+                    CMenu cMenu = new CMenu(menuView);
+                    view.Close();
+                    menuView.Show();
+
+                    
+                    users = FileStream.GetUsers();
+
+                    if (users[carnet].Tests[0].Completed)
+                    {
+                        menuView.LblEstadoA1.Content = "Completado";
+                    }
+                    if (users[carnet].Tests[1].Completed)
+                    {
+                        menuView.LblEstadoA2.Content = "Completado";
+                    }
+                    if (users[carnet].Tests[2].Completed)
+                    {
+                        menuView.LblEstadoB1.Content = "Completado";
+                    }
+                    if (users[carnet].Tests[3].Completed)
+                    {
+                        menuView.LblEstadoB2.Content = "Completado";
+                    }
+
+                    view.Close();
                 }
-                if (users[carnet].Tests[1].Completed)
+                else
                 {
-                    menuView.LblEstadoA2.Content = "Completado";
+                    MessageBox.Show("SU CONTRASEÑA, CARNET O NOMBRE DE USUARIO SON INCORRECTOS, POR FAVOR INGRESE CORRECTAMENTE SUS DATOS PARA CONTINUAR", "SIGN IN", MessageBoxButton.OK, MessageBoxImage.Information);
                 }
-                if (users[carnet].Tests[2].Completed)
-                {
-                    menuView.LblEstadoB1.Content = "Completado";
-                }
-                if (users[carnet].Tests[3].Completed)
-                {
-                    menuView.LblEstadoB2.Content = "Completado";
-                }
-                
-                view.Close();
+                ClearFields();
             }
             else
             {
-                MessageBox.Show("SU CONTRASEÑA, CARNET O NOMBRE DE USUARIO SON INCORRECTOS, POR FAVOR INGRESE CORRECTAMENTE SUS DATOS PARA CONTINUAR", "SIGN IN", MessageBoxButton.OK, MessageBoxImage.Information);
+                MessageBox.Show("POR FAVOR RELLENE TODOS LOS CAMPOS", "LOG IN", MessageBoxButton.OK, MessageBoxImage.Information);
             }
-            ClearFields();
+
+            
         }
 
         public void BtnSignUp_Click(object sender, EventArgs e)
@@ -98,7 +110,7 @@ namespace ClassesLibrary.Controller
             string name = view.TxtSignUpUsername.Text.Trim();
             string carnet = view.TxtSignUpCarnet.Text.Trim();
 
-            if (!(name.Equals("") && password.Equals("") && carnet.Equals("-")))
+            if (!(name.Equals("") || password.Equals("") || carnet.Equals("-")))
             {
                 User user = new User(name, carnet, password, InitTest());
                 FileStream.setNewUser(user);
