@@ -106,14 +106,19 @@ namespace ClassesLibrary.Controller
         public void ValidateSingup()
         {
 
-            string password = PasswordProcessing(view.TxtSignUpPassword.Password.ToString());
+            string password = view.TxtSignUpPassword.Password.ToString();
             string name = view.TxtSignUpUsername.Text.Trim();
             string carnet = view.TxtSignUpCarnet.Text.Trim();
 
             if (!(name.Equals("") || password.Equals("") || carnet.Equals("-")))
             {
-                User user = new User(name, carnet, password, InitTest());
-                FileStream.setNewUser(user);
+                password = PasswordProcessing(password);
+
+                if (!password.Equals(""))
+                {
+                    User user = new User(name, carnet, password, InitTest());
+                    FileStream.setNewUser(user);
+                }
             }
             else
             {
