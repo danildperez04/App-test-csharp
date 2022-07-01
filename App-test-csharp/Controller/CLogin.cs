@@ -92,7 +92,7 @@ namespace ClassesLibrary.Controller
             String carnet = view.TxtSignInCarnet.Text;
             users = FileStream.GetUsers();
 
-            if (users != null && users[carnet] != null)
+            if (users != null && users.ContainsKey(carnet) && users[carnet] != null)
             {
                 if (users[carnet].Password.Equals(encryptedPassword))
                 {
