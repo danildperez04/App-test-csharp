@@ -130,7 +130,6 @@ namespace ClassesLibrary.Controller
             view.TxtSignUpCarnet.Text = "";
             view.TxtSignUpUsername.Text = "";
             view.TxtSignUpPassword.Password = "";
-
         }
 
         public List<Test> InitTest()
