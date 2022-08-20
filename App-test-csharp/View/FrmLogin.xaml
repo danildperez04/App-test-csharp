@@ -17,7 +17,7 @@
                     <Grid Background="#121F3D">
                         <Label Content="SIGN IN" HorizontalAlignment="Center" Margin="0,21,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Arial Black" FontSize="20"/>
                         <Label Content="Carnet" HorizontalAlignment="Left" Margin="32,191,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Arial Black" FontSize="18"/>
-                        <TextBox x:Name="TxtSignInCarnet" x:FieldModifier="public" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="270" Height="20" Margin="0,237,0,0"/>
+                        <TextBox  x:Name="TxtSignInCarnet" x:FieldModifier="public" x:FieldModifier="static" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Width="270" Height="20" Margin="0,237,0,0"/>
                         <Label Content="Password" HorizontalAlignment="Left" Margin="32,271,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Arial Black" FontSize="18"/>
                         <PasswordBox x:Name="TxtPassword" x:FieldModifier="public" HorizontalAlignment="Center" Margin="0,317,0,0" VerticalAlignment="Top" Width="270" Height="20"/>
                         <Button x:Name="BtnSignIn" x:FieldModifier="public" Content="SIGN IN" HorizontalAlignment="Center" Margin="0,362,0,0" VerticalAlignment="Top" Width="130" Height="40"/>
